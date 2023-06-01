@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
 const Navbar = () => {
     const [open, setopen] = useState(false);
@@ -29,7 +30,7 @@ const Navbar = () => {
                     <div className={`list-none md:flex md:static absolute top-[53px] bg-gray-200 md:top-0 md:items-center 
                                     md:h-0  h-[100vh] md:w-auto w-[70%] shadow-lg text-center z-[999] ${open ? "left-0" : "left-[-100%]"}`}>
 
-                        <li className='text-xl mx-9 hover:text-blue-400 mt-11 md:mt-0 '>Home</li>
+                        <li className='text-xl mx-9 hover:text-blue-400 mt-11 md:mt-0 '><Link to="/">Home</Link> </li>
                         <li className='text-xl mx-9 hover:text-blue-400 mt-11 md:mt-0 '>About</li>
                         <li className='text-xl mx-9 hover:text-blue-400 mt-11 md:mt-0 '>Contact</li>
 

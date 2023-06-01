@@ -6,7 +6,8 @@ import {
   Routes,
   Route
 } from 'react-router-dom';
-import Data from './Component/Data';
+import Slug from './Component/Slug';
+import Form from './Component/Form';
 const App = () => {
   return (
     <Router>
@@ -14,7 +15,8 @@ const App = () => {
       <Navbar/>
       <Routes>
           <Route exact path='/' element={<Home/>}></Route>
-          <Route exact path='/series/:data' element={<Data/>}></Route>          
+          <Route exact path='/series/:data' element={<Slug/>}></Route>          
+          <Route exact path='/form' element={<Form/>}></Route>          
 
         </Routes>
     </div>

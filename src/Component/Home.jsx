@@ -19,11 +19,6 @@ const Home = () => {
 
     }, []);
 
-
-
-
-
-
     return (
 
         <div>
